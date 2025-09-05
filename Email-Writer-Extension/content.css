@@ -1,0 +1,49 @@
+/* AI Reply Button Styling */
+.email-writer-btn {
+  background-color: #0055aa;     /* High contrast blue */
+  color: #ffffff;                /* White text for readability */
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin: 8px 0;
+  cursor: pointer;
+
+  /* Smooth animation */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover state */
+.email-writer-btn:hover {
+  background-color: #004080;
+  transform: scale(1.03);
+}
+
+/* Keyboard focus state (important for accessibility) */
+.email-writer-btn:focus {
+  outline: 3px solid #ffaa00;   /* Yellow focus ring */
+  outline-offset: 2px;
+}
+
+/* Active (click) state */
+.email-writer-btn:active {
+  background-color: #003366;
+  transform: scale(0.97);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .email-writer-btn {
+    background-color: #3399ff;
+    color: #000000;
+  }
+
+  .email-writer-btn:hover {
+    background-color: #1a73e8;
+  }
+
+  .email-writer-btn:focus {
+    outline: 3px solid #ffcc00;
+  }
+}
